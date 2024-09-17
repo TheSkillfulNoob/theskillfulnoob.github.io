@@ -1,6 +1,6 @@
 function updateTotalVisitCount() {
     // Make a request to the PHP file to update and get the total visit count
-    fetch('https://sflamad.student.ust.hk/v3/assets/php/visits-counter.php')
+    fetch('https://theskillfulnoob.github.io/assets/php/visits-counter.php')
         .then(response => response.json())
         .then(data => {
             // Display the total visit count
