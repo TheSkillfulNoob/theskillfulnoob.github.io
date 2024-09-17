@@ -37,10 +37,22 @@ document.addEventListener('DOMContentLoaded', function() {
             pageIndicator.textContent = 'Page ' + currentPage + ' of ' + totalPages;
         }
 
-        // Update passage information
-        function updatePassageInfo() {
-            passageTitle.textContent = currentPassage.title;
-            passageDescription.textContent = currentPassage.description;
+        function updateDisplay() {        
+            // Update the image source
+            updateImage();
+        
+            // Update the page indicator and buttons
+            updatePageIndicator(totalPages);
+            updateButtons(totalPages);
+        
+            // Update passage title and include date
+            updatePassageInfo(currentPassage);
+        }
+        
+        function updatePassageInfo(passage) {
+            // Update the passage title and date
+            var passageTitle = document.getElementById('passage-title');
+            passageTitle.textContent = passage.title + " | " + passage.date; // Include date
         }
 
         function populatePassageSelector() {
@@ -55,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Set the default selected passage
             passageSelect.value = currentPassageKey;
         }
-        
+
         // Event listener for 'Previous' button
         prevButton.addEventListener('click', function() {
             if (currentPage > 1) {
@@ -80,12 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
             currentPassage = passages[currentPassageKey];
             totalPages = currentPassage.totalPages;
             currentPage = 1; // Reset to first page
-            updateImage();
-            updateButtons();
-            updatePassageInfo();
+            updateDisplay();
         });
 
-        
+
         
         // Call this function after passages are loaded
         populatePassageSelector();

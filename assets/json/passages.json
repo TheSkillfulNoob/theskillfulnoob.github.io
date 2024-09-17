@@ -3,12 +3,14 @@
     "title": "68 - On Emotions and Education",
     "description": "Reflects on my view on understanding of personality and the capability and motivation to teach/ mentor, with Inside Out 2 and the Korosensei series.",
     "folder": "68-on-emotions-and-education",
+    "date": "11 Jul, 2024",
     "totalPages": 10
     },
     "69-personifying-ai": {
     "title": "69 - Personiifying AI",
     "description": "Summarizes the potential MBTI candidates of AI, using frameworks of MBTI and a related OCEAN research. Goes on to discuss my personality match with AI and embracement to further enhance my edges down the road of being a quant.",
     "folder": "69-personifying-ai",
+    "date": "19 Jul, 2024",
     "totalPages": 10
     },
 
@@ -16,6 +18,7 @@
     "title": "70 - Goodbye Sun",
     "description": "Discusses my Instagram ban in July, and my way forward realizing that social media brings me a degenerating value, and decorrelating is necessary.",
     "folder": "70-goodbye-sun",
+    "date": "28 Jul, 2024",
     "totalPages": 10
     },
 
@@ -23,6 +26,7 @@
         "title": "71 - Fermi Estimation",
         "description": "Discusses the background, solving strategies of Fermi Estimations as a modelling device of quantities of life. It goes on to discuss estimation at a greater scope.",
         "folder": "71-fermi-estimation",
+        "date": "2 Aug, 2024",
         "totalPages": 10
     },
 
@@ -30,6 +34,7 @@
     "title": "72 - Dice Reroll",
     "description": "Using dice reroll examples in quant interviews to illustrate optimal choices under dynamic programming, and the destabilizing power of rerolling at a larger scale as a zero-sum game.",
     "folder": "72-dice-reroll",
+    "date": "15 Aug, 2024",
     "totalPages": 10
     },
 
@@ -37,6 +42,7 @@
         "title": "73 - Regularization",
         "description": "First provides an overview of regularization, then apply the concept of L_p norms to discuss individual preferences, socializing norms, and societal differences.",
         "folder": "73-regularization",
+        "date": "20 Aug, 2024",
         "totalPages": 10
     },
 
@@ -44,6 +50,7 @@
         "title": "74 - Quiet Struggles",
         "description": "Description for Convergence",
         "folder": "74-quiet-struggles",
+        "date": "26 Aug, 2024",
         "totalPages": 10
     },
 
@@ -51,6 +58,7 @@
         "title": "75 - Self Introduction",
         "description": "Description for Self Introduction",
         "folder": "75-self-introduction",
+        "date": "2 Sept, 2024",
         "totalPages": 8
     },
 
@@ -58,6 +66,7 @@
         "title": "76 - Convergence",
         "description": "Description for Convergence",
         "folder": "76-convergence",
+        "date": "11 Sept, 2024",
         "totalPages": 10
     }
 }
