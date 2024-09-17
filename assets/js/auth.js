@@ -4,7 +4,7 @@
 
 function loadCredentialsFromCSV(callback) {
     // Path to your CSV file (could be a server URL)
-    const csvFilePath = 'https://sflamad.student.ust.hk/v3/mentee-restricted/cred/mentor-credentials.csv';  // Update this path
+    const csvFilePath = 'https://theskillfulnoob.github.io/mentee-restricted/cred/mentor-credentials.csv';  // Update this path
 
     // Use Papa Parse to parse the CSV file
     Papa.parse(csvFilePath, {
