@@ -1,0 +1,35 @@
+{"72-dice-reroll": {
+    "title": "72 - Dice Reroll",
+    "description": "Description for Dice Reroll",
+    "folder": "72-dice-reroll",
+    "totalPages": 10
+},
+
+"73-regularization": {
+    "title": "73 - Regularization",
+    "description": "Description for Regularization",
+    "folder": "73-regularization",
+    "totalPages": 10
+},
+
+"74-quiet-struggles": {
+    "title": "74 - Quiet Struggles",
+    "description": "Description for Convergence",
+    "folder": "74-quiet-struggles",
+    "totalPages": 10
+},
+
+"75-self-introduction": {
+    "title": "75 - Self Introduction",
+    "description": "Description for Self Introduction",
+    "folder": "75-self-introduction",
+    "totalPages": 8
+},
+
+"76-convergence": {
+    "title": "76 - Convergence",
+    "description": "Description for Convergence",
+    "folder": "76-convergence",
+    "totalPages": 10
+}
+}

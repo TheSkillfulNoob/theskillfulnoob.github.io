@@ -3992,3 +3992,20 @@ input, select, textarea {
 ::placeholder {
     color: #ffffff;
 }
+
+/* Existing CSS */
+
+.navigation-buttons button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+/* New CSS for passage selector */
+.passage-selector {
+	margin-bottom: 20px;
+}
+
+.passage-selector select {
+	padding: 5px;
+	font-size: 16px;
+}
