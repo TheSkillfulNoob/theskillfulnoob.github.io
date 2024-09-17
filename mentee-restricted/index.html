@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Andrew's Mentee-Exclusive Portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- CSS Files -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet" media="screen">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet" media="screen">    
+
+	<!-- Google Fonts. Note that only "https" works, not "http". --> 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="https://sflamad.student.ust.hk/v3/images/icon.png"> 
+
+	<script>
+		// Check if the user is logged in
+		const isLoggedIn = localStorage.getItem('loggedIn');
+		if (isLoggedIn !== 'true') {
+			alert('Please log in if you are a mentee of mine :)')
+			window.location.href = 'https://sflamad.student.ust.hk/v3/mentee-login.html';  // Adjust this URL if needed
+		} else {
+			console.log('Access granted');
+		}
+	</script>
+</head>
+  
+<body data-spy="scroll" data-target="#navbar-scroll" font-family="FontAwesome">
+	<div id="top"></div> 
+	<!--Landing-->
+	<div class="fullscreen landing parallax" style="background-image:url('images/bg.jpg');" data-img-width="1000" data-img-height="600" data-diff="100">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h1 class="wow fadeInLeft">
+						Welcome, Mentee!
+						</h1>
+						<h4>Here, you would find exclusive resources about the major, academic studies, and the industry.</h4>
+					</div>
+					<div class="landing-text wow fadeInLeft text-center">
+						<br>Andrew's Mentee-Exclusive Portal | Version 1.0 | 9 Sept 2024
+					</div>		
+				</div>
+			</div> 
+		</div> 
+	</div>
+
+		<!-- NAVIGATION -->
+		<div id="menu">
+			<nav class="navbar-wrapper navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-themers">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<!--
+						<a class="navbar-brand site-name" href="#top"><img src="images/logo.png" alt="logo"></a>
+						-->
+					</div>
+			
+					<div id="navbar-scroll" class="collapse navbar-collapse navbar-themers navbar-left">
+						<ul class="nav navbar-nav">
+							<li><a href="#Academics">Academics</a></li>
+							<li><a href="#Events">Events</a></li>
+							<li><a href="#Career-Basics">Career Basics</a></li> 
+							<li><a href="#Career-Roles">Career Pathways</a></li> 				
+							<li><a href="#FAQ">FAQ &amp; Forum</a>
+							<li><a href="#About">Updates Log</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!--Academics. In the past, "Content"-->
+		<div id="Academics">
+			<div class="action fullscreen parallax" style="background-image:url('images/bg2.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
+				<div class="overlay downloadSection">
+					<div class="container">
+						<div>
+							<!--Academic overview-->
+							<h1>Academics</h1>
+							<div class="col-md-9 col-sm-12">
+								<!--
+									<span class="download-text wow fadeInRight">
+									-->
+								<span>
+									<h3>Studying here could be tough with the very high expectations implied.</h3>
+									<ul>
+										<li>First understand the QFIN major and its difference to other traditional high-end majors (e.g. GBUS, E&amp;F and Risk Mgmt.).
+											I asked some <a title = "GBUS VS QFIN 2022: An Ultimate University Major Guide" href = "https://drive.google.com/file/d/1X3ZjcNFoPbma_wF1809ybwHLGla0vwGz">GBUS and QFIN students</a> across local business schools for ideas.
+										</li>
+										<div style="margin-bottom: 12px;"></div>
+
+										<li>Next, have a rough idea of the courses you'll do, from official sources and student testimonies.
+											<br> (Ask other QFIN seniors for their testimonies!):
+											<h4>Business CCs</h4>
+											ISOM 2500, ECON 2113-2123, ACCT 2010, ISOM 2010, MGMT 2010-2130, FINA 2303, ISOM 2020-2600
+											<br>
+											Note that you have to study 43 (vs 29) credits of business common core with a business double major.
+											<h4>Common Cores</h4>
+											<h4>QFIN Major</h4>
+										</li>
+										<div style="margin-bottom: 12px;"></div>
+										<li>I wrote 
+											<a title = "My 2022 old stuff on study advice" href = "http://sflamad.student.ust.hk/archive/academics/">this</a> last year for study advice.
+										</li>
+										<div style="margin-bottom: 12px;"></div>
+									</ul>
+								</span>
+								<!--<div class="btn-section"><a href="#download" class="btn-default">Not sure if button needed</a></div>-->
+							</div>
+							<!--Placeholder. More info?-->
+							<div class="col-md-3 col-sm-12" style = "border-left: 1px solid white; padding-left: 15px; min-height:200px">
+								<h3>General Academic Pointers</h3>
+								<h4>Course/ Review Sites</h4>
+								<table class="table table-striped text-center" style = "background-color: transparent">
+									<tr>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://ust.space/">UST Space</a></td>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://w5.ab.ust.hk/wcq/cgi-bin/2310/">Course List*</a></td>
+									</tr>
+								</table>
+								<small><small>* replace "wcq" with "wex" for timetables</small></small>
+								<h4>Helpful Learning Links</h4>
+								<table class="table table-striped text-center" style = "background-color: transparent">
+									<tr>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://www.wolframalpha.com/">Wolfram &#945;<br>(MATH)</a></td>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://chat.openai.com">ChatGPT<br>(General)</a></td>
+									</tr>
+									<tr>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://stackoverflow.com/">Stack O/F<br>(COSC)</a></td>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://www.w3schools.com/">W3schools<br>(Prog)</a></td>
+									</tr>
+								</table>
+							</div>		
+						</div>
+						
+						<div>
+							<div class="col-md-9 col-sm-12">
+								<span class="download-text wow fadeInRight">
+									<h3>Consider which academic pathway/ experiences you wish to pursue early.</h3>
+									<ul>
+										<li>UG QFIN is not quant enough: it is a delicate balance between Finance, Computer Science (COSC) and Mathematics (MATH).
+											Hence, many senior students (~1/3) take a MATH or COSC double major.
+										</li>
+										<div style="margin-bottom: 12px;"></div>
+										<li>In general the double major will lie in one of the three categories. 
+											I asked students pursuing each for advice, but decided not to engage further.
+											<ol>
+												<li>COSC</li>
+												<li>MATH/ MAEC</li>
+												<li>Other business school majors</li>
+											</ol>
+										</li>
+										<div style="margin-bottom: 12px;"></div>
+										<li>Taking triple majors are possible but super heavy load.
+											<ul>
+												<li>We have two students (2022) taking this path. I know that in the year 2025, more people have achieved so by taking many shortcuts.</li>
+												<li>DDP's Aaron Wang has written a <a href = "https://drive.google.com/file/d/1vaBRdOP4f2eY4U8ijaCKDxg2_h4nKAX_" title = "Eventually, he took 4">Triple Major Guide</a> for Dualers; worth referencing.
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</span>
+							</div>
+
+							<div class="col-md-3 col-sm-12" style = "border-left: 1px solid white; padding-left: 15px; min-height:200px">
+								<h3>Academic pointers</h3>
+								<table class="table table-striped text-center" style = "background-color: transparent">
+									<h4>Curriculum &amp; Tracks</h4>
+									<tr>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://fina.hkust.edu.hk/programs/bsc-in-quantitative-finance/bsc-qf-curriculum">QFIN Curriculum</a></td>
+									</tr>
+									<tr>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://ugadmin.hkust.edu.hk/prog_crs/pdf/ug/cosc.pdf">COSC Double</a></td>
+									</tr>
+									<tr>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://cse.hkust.edu.hk/bsc/faq/">COSC FAQ</a></td>
+									</tr>
+									<tr>
+										<td class = "academic-background"><a class = 'white-pointers' href = "https://www.math.hkust.edu.hk/ug/curriculum.php">MATH</a></td>
+									</tr>
+								</table>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id = "1">
+		</div>
+
+		<!--Events-->
+		<div id="Events">
+			<div class="container">
+				<div class="row">
+					<div style="margin-bottom: 25px;"></div>
+					<div class="col-md-12 col-sm-12 feature-title">
+						<br>
+						<div style="margin-bottom: 50px;"></div>
+						<h1>Events &amp; FAQ</h1>
+						<p class="download-text wow fadeInRight">Amid hustles, don't forget to experience uni life with ECA! 
+							<ul>
+								<li>I made a <a href = "https://sflamad.student.ust.hk/archive/nso/" title = "Note: Sept 2022 old stuff">prototype site</a> (2022) for this purpose.
+									<br>Content includes {Sources, peers, study methods, clubs, socializing}
+									<br>I'll repackage and update the info on the site here with new information. Meanwhile please feel free to take a look here to get a glimpse!
+								</li>
+								<div style="margin-bottom: 12px;"></div>
+								<li>A <b>dynamic faculty timetable</b> corresponding to upcoming QFIN events can be implemented.
+									I don't see myself affording the time though.
+								</li>
+								<div style="margin-bottom: 12px;"></div>
+								<li><b>Casecomps</b>: also a indispensable part of first-year adventures. 
+									<br>Looking to ask past casecomp winners for their experience, advice and the way they did things.
+									Will you be the next winner?
+								</li>
+								<div style="margin-bottom: 12px;"></div>
+								<li>At the meantime, please <b>raise your ideas</b> (how things can be done, what you want to know, improvements over the site).
+									<br>An anonymous input box will be implemented here at the latter stages so as to channel your ideas into consideration.
+									<br>Will genuinely appreciate your input to improve!
+								</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+
+		<!--Career-->
+		<div id="Career-Basics">
+			<div class="action fullscreen parallax" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
+				<div class="overlay downloadSection">
+					<div class="container">
+						<div class="text-left">
+							<h1 class="wow fadeInLeft">Career Basics</h1>
+							<!--For Networking-->
+							<div class="col-md-12 col-sm-12 text-left" style = "min-height:200px">
+								<h3>You're in a business school after all - expand your network and polish yourself well.</h3>
+								<div style="margin-bottom: 12px;"></div>
+								<ul>
+									<li><b title = "Miki can give some more context?">QFIN CMP</b> runs for Y2 and 3, where executive-level business leaders would be our mentors.</li>
+									<div style="margin-bottom: 12px;"></div>
+									<li>Peer mentors relate to your struggles more, and could give you more advice being in HKUST.
+										<br>And for seniors, a way to contribute back to the community while knowing more future bright talents.
+									</li>
+									<div style="margin-bottom: 12px;"></div>
+									<li>Linkedin: Be proactive but not overly aggressive.
+									</li>
+									<li>School offers professional portrait shoots. Check your emails!
+									</li>
+									<div style="margin-bottom: 12px;"></div>
+								</ul>
+								<div style="margin-bottom: 50px;"></div>
+							</div>
+							
+							<!--For CV-->
+							<div>
+								<!--Remarks-->
+								<div class = "col-md-9 col-sm-12 text-left" style = "min-height:200px">
+									<h3>You need a decent CV to get past job recruitment screenings.</h3>
+									<div style="margin-bottom: 20px;"></div>
+									<ul>
+										<li>
+											Know which style (Traditional | Skill-based | Academic) to use for various purposes.
+											<br>CV Samples on the right are all for traditional CVs.
+										</li>
+										<div style="margin-bottom: 20px;"></div>
+										<li>Recruiters on average spend <a href = "https://www.theladders.com/static/images/basicSite/pdfs/TheLadders-EyeTracking-StudyC2.pdf" title = "CV eyetracking study with highlighted common mistakes)">7 seconds</a> on scanning your CV.
+											You should consider the following:
+											<div style="margin-bottom: 12px;"></div>
+											<ul>
+												<li><b>One page</b> rule for traditional CV, esp. for banks; Best 10-11 pt font size (400-550 words).
+													<br>See <a href = "https://enhancv.com/blog/how-long-should-a-resume-be/">Enhancv</a> and <a href = "https://www.indeed.com/career-advice/resumes-cover-letters/how-long-should-a-cv-be">Indeed</a> for CV length guidance.
+												</li>
+												<div style="margin-bottom: 12px;"></div>
+												<li>Education: Advised to only include uni/ exchange in Y3-4 with more work exp
+													<br>Could include sec school/ <b>relevant uni courses</b> to highlight your excellence/ industry interest.</li>
+												<div style="margin-bottom: 12px;"></div>
+												<li><b>Quantify</b> achievements and work impact in numbers within bullets.</li>
+												<div style="margin-bottom: 12px;"></div>
+												<li>Keep <b>bullets short</b> (1-2 lines each), Feature all important info on the left ONLY.</li>
+												<div style="margin-bottom: 12px;"></div>
+												<li>Use more <b>action verbs</b></li>
+											</ul>
+										</li>
+										<div style="margin-bottom: 20px;"></div>
+										<li>Depending your CV progress, below is a suggestion of you visiting each of the resource:
+											<div style="margin-bottom: 12px;"></div>
+											<ol>
+												<li>
+													<b>Kickstarting</b>: LSE's CV Intro offers a quick guidance/ familiarization on what to include.
+												</li>
+												<div style="margin-bottom: 12px;"></div>
+												<li>
+													<b>Reference</b>: Oxford CV Sample 1 (for freshmen); LSE CV sample (for senior students).
+												</li>
+												<div style="margin-bottom: 12px;"></div>
+												<li>
+													<b>Refining/consolidating</b>: Action verbs from Harvard (P.4)/ Stanford guidebooks (P.3) would help.
+												</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+								<!--All useful links for CV-->
+								<div class = "col-md-3 col-sm-12 text-left" style = "border-left: 1.5px solid white; padding-left: 15px; min-height:200px">
+									<h3>Open-sourced CV Resources</h3>
+									<h4>Oxford</h4>
+									<table class="table table-striped text-center" style = "background-color: transparent">
+										<tr>
+											<td class = "cv-background"><a class = 'white-pointers' href = "https://www.careers.ox.ac.uk/cvs#collapse1542131">Guide</a></td>
+											<td class = "cv-background"><a class = 'white-pointers' href = "https://www.careers.ox.ac.uk/files/traditional-cv-examplepdf">Sample 1</a>
+												<br><a class = 'white-pointers' href = "https://www.careers.ox.ac.uk/files/traditional-cv-example-2pdf">Sample 2</a>
+											</td>
+										</tr>
+									</table>
+									<h4>Cambridge</h4>
+									<table class="table table-striped text-center" style = "background-color: transparent">
+										<tr>
+											<td class = "cv-background"><a class = 'white-pointers' href = "https://www.careers.cam.ac.uk/applying-for-jobs/cvs-and-cover-letters">Overview</a></td>
+											<td class = "cv-background"><a class = 'white-pointers' href = "https://www.careers.cam.ac.uk/files/cambridgecvsandapplications.pdf">Guidebook<br>&amp; Samples</a></td>
+										</tr>
+									</table>
+									<h4>LSE</h4>
+									<table class="table table-striped text-center" style = "background-color: transparent">
+										<tr>
+											<td class = "cv-background"><a class = 'white-pointers' href = "https://info.lse.ac.uk/current-students/careers/information-and-resources/application-process/cvs">CV Intro</a></td>
+											<td class = "cv-background"><a class = 'white-pointers' href = "https://info.lse.ac.uk/current-students/careers/Assets/Documents/example-applications/1-page-UG.pdf">Sample</a></td>
+										</tr>
+									</table>
+
+									<h4>Harvard</h4>
+									<table class="table table-striped text-center" style = "background-color: transparent">
+										<tr>
+											<td class = "cv-background"><a class = 'white-pointers' href = "https://careerservices.fas.harvard.edu/channels/create-a-resume-cv-or-cover-letter/">CV Channel</a></td>
+											<td class = "cv-background"><a class = 'white-pointers' href = "https://hwpi.harvard.edu/files/ocs/files/gsas-cvs-and-cover-letters.pdf">Guidebook</a></td>
+										</tr>
+									</table>
+									<h4>Stanford</h4>
+									<table class="table table-striped text-center" style = "background-color: transparent">
+										<tr>
+											<td class = "cv-background"><a class = 'white-pointers' href = "https://education.scripps.edu/_files/pdfs/postdoctoral/resumes-cover-letters-stanford.pdf">Guidebook</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div style="margin-bottom: 50px;"></div>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="Career-Roles">
+			<div class="container">
+				<div class="row">
+					<div style="margin-bottom: 25px;"></div>
+						<div class="col-md-12 col-sm-12 feature-title">
+							<div style="margin-bottom: 50px;"></div>
+							<h1 class="wow fadeInLeft">Career Pathways</h1>
+							Kickstarting a successful career takes dedication, awareness and planning.
+							<!--Textbook vs Practical Hard Skills-->
+							<div style="margin-bottom: 30px;"></div>
+							<div class="col-md-9 col-sm-12 text-left" style = "min-height:200px">
+								<h3>Balance between <b>textbook hard skills</b> (school) and <b>practical hard skills</b> (work) is important.</h3>
+								<ul>
+									<li>
+										First you got to know how the financial world sounds like outside of the academic context.
+										<br>From CFI, here you'll see succinct summaries on <a href = "https://drive.google.com/file/d/1rTj9xwbzfqE002djbkvZtVDdRd3STh_p/">Banking Industry</a> and <a href = "https://drive.google.com/file/d/1Xv9RarxKYkirEBMCbcYqtovabuEHNWFX/">Capital Markets</a>
+										<div style="margin-bottom: 6px;"></div>
+										Unfortunately Prof. Veronique refused to (I once asked) remake her "Intro to finance" course</b> for a buy-sell side overview!
+									</li>
+									<div style="margin-bottom: 12px;"></div>
+									<li>
+										Read <b>financial news</b> every day if possible. Sources suggested on the right.
+									</li>
+									<div style="margin-bottom: 12px;"></div>
+									<li>
+										Finally, you might also want to brush up skills in using financial software.
+										<br>Bloomberg terminal/ reuters navigation with FINA 3810/ FINA 3820 or internships (Links to be sourced)
+										<br>Build up your Python stack as early as possible. (Some links to be featured here later...)
+									</li>
+								</ul>
+								<div style="margin-bottom: 30px;"></div>
+								<h3>Knowing your industry of pursuit without extensive research/ insider experience is difficult.</h3>
+								<ul>
+									<li>This <a href = "https://drive.google.com/file/d/159_yurYGsgGQVCv1S8ceoNI_t5WpcJXJ/" title = "Currently restricted">QFIN career pathways</a> report compiles
+											inputs from senior HK QFIN students working in BB SnT, IBD and buy side Quant roles last year.
+										<br>The link is restricted to keep it strictly within QFIN circulation: Please send me the permission message through drive to view!
+									</li>
+									<li>For to-be SWEs, this <a href = "https://drive.google.com/drive/folders/1TStKI57ELZAQYHlP_TFlE4J8EsntQZ8s" title = "By Aaron Wang">SWE Intern Primer</a> written by a current Citadel software engineer would be handy.</li>
+								</ul>
+							</div>
+
+							<div class="col-md-3 col-sm-12 text-left" style = "border-left: 1.5px solid #242424; padding-left: 15px; min-height:200px">
+								<h3>Building your skillsets</h3>
+								<h4>News Sources</h4>
+								<table class="table table-striped text-center" style = "background-color: transparent">
+									<thead>
+										<tr>
+											<th class = 'text-center'>Free</th>
+											<th class = 'text-center'>Paid*</th>
+										</tr>
+									</thead>
+									<tr>
+										<td class = "skill-background"><a class = 'black-pointers' href = "https://www.reuters.com/">Reuters</a></td>
+										<td class = "skill-background"><a class = 'black-pointers' href = "https://www.bloomberg.com/">Bloomberg</a></td>
+									</tr>
+									<tr>
+										<td class = "skill-background"><a class = 'black-pointers' href = "https://www.investing.com/">Investing.com<br></a></td>
+										<td class = "skill-background"><a class = 'black-pointers' href = "https://www.ft.com/">Financial Times</a></td>
+									</tr>
+									<tr>
+										<td class = "skill-background"><a class = 'black-pointers' href = "https://www.forexfactory.com/">ForexFactory<br>(Events)</a></td>
+										<td class = "skill-background"><a class = 'black-pointers' href = "https://www.wsj.com/">WSJ<br></a></td>
+									</tr>
+								</table>
+								<small><small>* Consider a <a href = "https://github.com/iamadamdev/bypass-paywalls-chrome">paywall bypass plugin</a>...</small></small>
+
+								<h4>Programming</h4>
+								<table class="table table-striped text-center" style = "background-color: transparent">
+									<tr>
+										<td class = "skill-background"><a class = 'black-pointers' href = "https://leetcode.com/">Leetcode</a></td>
+										<td class = "skill-background"><a class = 'black-pointers' href = "https://ww1.neetcode.com/">Neetcode</a></td>
+									</tr>
+									<tr>
+										<td class = "skill-background"><a class = 'black-pointers' href = "https://github.com/">Github</a></td>
+										<td class = "skill-background"><a class = 'black-pointers' href = "#">Placeholder</a></td>
+									</tr>
+								</table>
+								<br>Some more python, sql, bbg, appropriate sites...
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="margin-bottom: 25px;"></div>
+		</div>
+
+		<div id="FAQ">
+			<div class="action fullscreen parallax" style="background-image:url('images/bg.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
+				<div class="overlay">
+					<div class="container">
+						<div class="row contact-row">
+							<h1>Feedback Form Testing</h1>
+							Our QFIN major thrives on the excellence demonstrated by each of you - resources can be further optimized with your anonymous feedback!
+							<br><br>							
+							<div class="col-sm-8 wow fadeInUp">
+								<!--The commented code is originally implemented to automail whenever a feedback comes. (codes in contactengine.php).
+								However for simplicity I used codes suggested by ChatGPT (in js/storefeedback.js and process_feedback.php).
+								-->
+								<!--
+									<form method="POST" id="contact-form" class="form-horizontal" action="contactengine.php" onSubmit="alert('Thank you for your feedback!');">
+										<div class="form-group">
+										<input type="text" name="Email" id="Email" class="form-control wow fadeInUp" placeholder="Email" required/>
+										</div>					
+										<div class="form-group">
+										<textarea name="Message" rows="20" cols="20" id="Message" class="form-control input-message wow fadeInUp"  placeholder="Message" required></textarea>
+										</div>
+										<div class="form-group">
+										<input type="submit" name="submit" value="Submit" class="btn btn-success wow fadeInUp" />
+										</div>
+									</form>	
+								-->
+								<h2>Feedback Form</h2>
+								<form id="feedback-form" method="POST">
+									<div class="form-row">
+										<label for="name">Name:</label>
+										<input type="text" id="name" name="name" class="form-control wow fadeInUp" placeholder="Name (Optional)">
+									</div>
+								
+									<div class="form-row">
+										<label for="email">Email:</label>
+										<input type="email" id="email" name="email" class="form-control wow fadeInUp" placeholder="Email (Optional)">
+									</div>
+								
+									<div class="form-row">
+										<label for="message">Feedback:</label>
+										<textarea id="message" name="message" rows="4" class="form-control input-message wow fadeInUp"  placeholder="Message" required></textarea>
+									</div>
+									<br><br>
+									<div class="form-row">
+										<input type="submit" value="Submit" class="btn btn-success wow fadeInUp">
+									</div>
+								</form>
+							</div>
+
+							<div class="col-sm-4 wow fadeInUp">
+								<h2>Contact Author</h2>
+									<ul class="ul-address">
+										<li><i class = "pe-7s-users"></i>Andrew Lam</li>
+										<li><i class="pe-7s-map-marker"></i>HKUST (Of course it's my home. Jk)<br>
+										Clear Water Bay
+										</li>
+										<li><i class="pe-7s-phone"></i>+852 9035-4789
+										</li>
+										<li><i class="pe-7s-mail"></i><a href="mailto:sflamad@connect.ust.hk">sflamad@connect.ust.hk</a></li>
+										<li><i class="pe-7s-info"></i><a href="https://sflamad.student.ust.hk">https://sflamad.student.ust.hk</a></li>
+									</ul>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="About">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<br>
+						<h1 class = "text-left">Updates Log</h1>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th style="width:150px">Date</th>
+									<th style="width:125px">Version</th>
+									<th style="width:625px">Content</th>
+								</tr>
+							</thead>
+							<tr>
+								<td>9 Sep 2023</td>
+								<td>Ver 1.0</td>
+								<td>Privatized the website for exclusive access to my mentees.
+									<br>Took most of Ver 0.5 content.
+									<br>Now protected behind a mentee login site.
+								</td>
+							</tr>
+							<tr>
+								<td>17 Sep 2023</td>
+								<td>Ver 0.5</td>
+								<td>Constructed academic survey googleform.
+									<br>Logo design.
+									<br>Anonymous feedback portal now available.
+								</td>
+							</tr>
+							<tr>
+								<td>15 Sep 2023</td>
+								<td>Ver 0.4.1</td>
+								<td>Implemented news sources/ programming and academic pointers.
+									<br>Website font fix.
+									<br>Reformatted sections.
+								</td>
+							</tr>
+							<tr>
+								<td>14 Sep 2023</td>
+								<td>Ver 0.4</td>
+								<td>Expanded CV guidance session. 
+									<br>Started working on "academics" by gathering opinion on majors and courses.
+									<br>Reformatted sections.
+								</td>
+							</tr>
+
+							<tr>
+								<td>9 Sep 2023</td>
+								<td>Ver 0.3</td>
+								<td>Major content update following discussion with Miki.
+									<br>Resources - information pointers, putting all existing infra/ research/ work in place.
+									<br>See how things will go... 
+								</td>
+							</tr>
+
+							<!--Progress in AY 2022-23-->
+							<tr>
+								<td>23 Jan 2023</td>
+								<td>Ver 0.2.1</td>
+								<td>Updated the overview of all the items to be included in the website.
+									<br>Circulated to team members for reference.
+								</td>
+							</tr>
+							<tr>
+								<td><strong>22 Jan 2023</strong></td>
+								<td><strong>Ver 0.2</strong></td>
+								<td><strong>New colour scheme and template from github template.</strong>
+									<br>Taken reference from initial feedback of some QF students. Project is 10% Done.
+									<br>Content included in the website would be listed in the next update.</td>
+							</tr>
+							<tr>
+								<td>18 Jan 2023</td>
+								<td>Ver 0.1</td>
+								<td>Initial construction of the website after consultation on layout, planning and from department.</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div class="container">
+				<div class="col-md-12">
+					<div class="text-left wow fadeInUp" style="font-size: 14px;">				
+						Version 0.5 | &copy; <a href = "https://sflamad.student.ust.hk">Andrew Lam</a> 2023. All rights reserved.
+					</div>
+					<a href="#" class="scrollToTop"><i class="pe-7s-up-arrow pe-va"></i></a>
+				</div>	
+			</div>	
+		</footer>
+	<!-- javascript files -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/ekko-lightbox-min.js"></script>
+	<script type="text/javascript">
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); }); 
+	</script>
+	<script>
+		new WOW().init();
+	</script>
+	<script>
+		var aTags = document.querySelectorAll('a');
+		for (var i = 0; i < aTags.length; i++) {
+			aTags[i].setAttribute('target', '_blank');
+			aTags[i].setAttribute('rel', 'noopener noreferrer');
+		}
+	</script>
+
+	<script src="js/storefeedback.js"></script>
+</body>
+</html>
