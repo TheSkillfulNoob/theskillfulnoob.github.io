@@ -17,15 +17,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function fetchPassages(year) {
         fetch(`https://theskillfulnoob.github.io/assets/json/year${year}_passages.json`)
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
             passages = data;
             currentPassageKey = Object.keys(passages)[0]; // Set default passage to the first one
             currentPassage = passages[currentPassageKey];
             totalPages = currentPassage.totalPages;
             currentPage = 1; // Reset to first page
-
-            populatePassageSelector();
+    
+            populatePassageSelector(); // Populate only after passages are loaded
             updateDisplay();
         })
         .catch(error => console.error('Error fetching passages:', error));
@@ -85,6 +90,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Populate the passage selector with options
     function populatePassageSelector() {
+        if (!passageSelect) {
+            console.error('Passage select element not found');
+            return;
+        }
+    
         passageSelect.innerHTML = ''; // Clear previous options
         for (var key in passages) {
             if (passages.hasOwnProperty(key)) {
@@ -95,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         // Set the default selected passage
-        passageSelect.value = currentPassageKey;
+        passageSelect.value = currentPassageKey || Object.keys(passages)[0]; // Fallback to first passage if currentPassageKey is null
     }
 
     // Event listener for 'Previous' button
