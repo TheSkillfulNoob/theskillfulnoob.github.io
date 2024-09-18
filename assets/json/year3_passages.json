@@ -1,9 +1,26 @@
 {
-    "68-time-role": {
-    "title": "68 - Time's Role",
+    "5-6-thoughts-on-data-processing": {
+    "title": "5 & 6 - Thoughts on Data Processing",
     "description": "Explores the conversion between time and money, and the importance of controlling the rate of change.",
-    "folder": "68-time-role",
+    "folder": "5-6-thoughts-on-data-processing",
+    "date": "11 June, 2023",
+    "totalPages": 6
+    },
+    "16-gamer-ii": {
+    "title": "16 - Gamer II",
+    "description": "Extending on the previous instalment, this weekly discusses the use of games to me, as playgrounds to experiment optimization, escapism of real life with games, and trading as game simulations.",
+    "folder": "16-gamer-ii",
+    "date": "20 May, 2023",
+    "totalPages": 6
+    },
+    "19-time-role": {
+    "title": "19 - Time's Role",
+    "description": "Explores the conversion between time and money, and the importance of controlling the rate of change.",
+    "folder": "19-time-role",
     "date": "11 June, 2023",
     "totalPages": 6
     }
 }
+
+
+

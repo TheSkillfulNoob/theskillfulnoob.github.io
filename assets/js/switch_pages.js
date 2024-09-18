@@ -45,6 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
         updatePassageInfo(currentPassage);
     }
 
+    // Update passage information including title, date, and description
+    function updatePassageInfo(passage) {
+        passageTitle.textContent = passage.title + " | " + passage.date; // Include date
+        passageDescription.textContent = passage.description; // Update description
+    }
+
     // Update image display
     function updateImageDisplay() {
         pageImage.src = 'weekly-doc/year' + yearSelect.value + '/' + currentPassage.folder + '/page_' + currentPage + '.jpg';
@@ -60,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update PDF display
     function updatePdfDisplay() {
         // Assuming you have a PDF viewer set up to display the PDF
-        var pdfPath = 'weekly-doc/year' + yearSelect.value + '/' + currentPassage.folder + '/document.pdf';
+        var pdfPath = 'weekly-doc/year' + yearSelect.value + '/' + currentPassage.folder + '.pdf';
         pdfViewer.src = pdfPath; // Set the PDF source
         pdfViewer.style.display = 'block'; // Show PDF viewer
         pageImage.style.display = 'none'; // Hide image
