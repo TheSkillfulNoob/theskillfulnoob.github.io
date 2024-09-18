@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var passageTitle = document.getElementById('passage-title');
     var passageDescription = document.getElementById('passage-description');
     var pageIndicator = document.getElementById('page-indicator');
-    var yearSelect = document.getElementById('year-select'); // Dropdown for year selection
+    var yearSelect = getYearFromFileName(); // Dropdown for year selection
 
     function fetchPassages(year) {
         fetch(`https://theskillfulnoob.github.io/assets/json/year${year}_passages.json`)
@@ -97,12 +97,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set the default selected passage
         passageSelect.value = currentPassageKey;
     }
-
-    // Event listener for year selection
-    yearSelect.addEventListener('change', function() {
-        var selectedYear = this.value;
-        fetchPassages(selectedYear); // Fetch passages for the selected year
-    });
 
     // Event listener for 'Previous' button
     prevButton.addEventListener('click', function() {
