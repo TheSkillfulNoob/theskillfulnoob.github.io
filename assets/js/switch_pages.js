@@ -31,6 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error fetching passages:', error));
     }
 
+    // Function to extract year from the HTML file name
+    function getYearFromFileName() {
+        var path = window.location.pathname; // Get the current path
+        var fileName = path.substring(path.lastIndexOf('/') + 1); // Extract the file name
+        var yearMatch = fileName.match(/year(\d)/); // Match the year pattern (e.g., year1, year2, etc.)
+        return yearMatch ? yearMatch[1] : null; // Return the year or null if not found
+    }
+
     // Function to update the display based on current passage and format
     function updateDisplay() {        
         if (yearSelect.value === '4') {
@@ -122,5 +130,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Call this function after passages are loaded
-    fetchPassages(4); // Default to year 4 on page load
+    var currentYear = getYearFromFileName(); // Get the current year dynamically
+    if (currentYear) {
+        fetchPassages(currentYear); // Fetch passages for the extracted year
+    } else {
+        console.error('Year not found in file name');
+    }
 });
