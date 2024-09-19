@@ -45,8 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Function to update the display based on current passage and format
-    function updateDisplay() {        
-        if (yearSelect.value === '4') {
+    function updateDisplay() {     
+        console.log(yearSelect)   
+        if (yearSelect === '4') {
             // Year 4 - Display images
             updateImageDisplay();
         } else {
