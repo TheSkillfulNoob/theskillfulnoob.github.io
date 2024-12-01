@@ -202,7 +202,7 @@
 				
 				function incrementDownload(paperId) {
 					authenticateUser().then(() => {
-						const range = "MockDownloads!B2:B4"; // Adjust as per your sheet structure
+						const range = "Sheet1!B2:B4"; // Adjust as per your sheet structure
 						gapi.client.sheets.spreadsheets.values.get({
 							spreadsheetId: SHEET_ID,
 							range: range
