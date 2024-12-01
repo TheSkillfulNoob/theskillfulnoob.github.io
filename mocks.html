@@ -178,7 +178,7 @@
 							apiKey: API_KEY,
 							discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"]
 						}).then(() => {
-							const sheetName = "MockPaperDownloads"; // Use sheet's tab name
+							const sheetName = "MockDownloads"; // Use sheet's tab name
 							const range = `${sheetName}!A2:B4`; // Adjust range to your data
 				
 							// Fetch current data
@@ -214,7 +214,7 @@
 							apiKey: API_KEY,
 							discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"]
 						}).then(() => {
-							const sheetName = "MockPaperDownloads";
+							const sheetName = "MockDownloads";
 							const range = `${sheetName}!B2:B4`; // Only fetch counts
 				
 							gapi.client.sheets.spreadsheets.values.get({
