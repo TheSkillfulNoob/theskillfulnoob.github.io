@@ -169,40 +169,59 @@
 			<script src="assets/js/main.js"></script>
 
 			<script src="https://apis.google.com/js/api.js"></script>
+			<script src="https://accounts.google.com/gsi/client"></script>
+			<script src="https://apis.google.com/js/api.js"></script>
 			<script>
+				const CLIENT_ID = '1068731891258-3t39fvjt6ko5i7dquqmgthv5rum02nfn.apps.googleusercontent.com'; // Replace with your Client ID
 				const API_KEY = 'AIzaSyA3H_sUmwzb3qjNxJrQaNVw0hV6EJ2jjNU';
 				const SHEET_ID = '1b-x3l2jybYVMlxtLyfvEc7z3HDvk1AlbLjATinhXJkM'; // Found in the Google Sheet URL
-				function updateDownloadCount(paperId) {
-					gapi.load('client', () => {
-						gapi.client.init({
-							apiKey: API_KEY,
-							discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"]
-						}).then(() => {
-							const sheetName = "Sheet1"; // Use sheet's tab name
-							const range = `${sheetName}!A2:B4`; // Adjust range to your data
+				function authenticateUser() {
+					return gapi.auth2.getAuthInstance()
+						.signIn({ scope: "https://www.googleapis.com/auth/spreadsheets" })
+						.then(() => {
+							console.log("Sign-in successful");
+						}, (error) => {
+							console.error("Error signing in", error);
+						});
+				}
 				
-							// Fetch current data
-							gapi.client.sheets.spreadsheets.values.get({
+				function loadClient() {
+					gapi.client.setApiKey(API_KEY);
+					return gapi.client.load("https://sheets.googleapis.com/$discovery/rest?version=v4")
+						.then(() => {
+							console.log("GAPI client loaded for API");
+						}, (error) => {
+							console.error("Error loading GAPI client for API", error);
+						});
+				}
+				
+				// Initialize the Google API client
+				gapi.load("client:auth2", () => {
+					gapi.auth2.init({ client_id: CLIENT_ID });
+				});
+				
+				function incrementDownload(paperId) {
+					authenticateUser().then(() => {
+						const range = "MockDownloads!B2:B4"; // Adjust as per your sheet structure
+						gapi.client.sheets.spreadsheets.values.get({
+							spreadsheetId: SHEET_ID,
+							range: range
+						}).then((response) => {
+							const rows = response.result.values;
+							const updatedRows = rows.map(row => {
+								if (row[0] === paperId) {
+									row[2] = parseInt(row[2], 10) + 1; // Increment count
+								}
+								return row;
+							});
+				
+							gapi.client.sheets.spreadsheets.values.update({
 								spreadsheetId: SHEET_ID,
-								range: range
-							}).then(response => {
-								const rows = response.result.values;
-								const updatedRows = rows.map(row => {
-									if (row[0] === paperId) {
-										row[1] = parseInt(row[2], 10) + 1; // Increment count
-									}
-									return row;
-								});
-				
-								// Write updated data back
-								gapi.client.sheets.spreadsheets.values.update({
-									spreadsheetId: SHEET_ID,
-									range: range,
-									valueInputOption: "RAW",
-									resource: { values: updatedRows }
-								}).then(() => {
-									console.log(`${paperId} count updated.`);
-								}).catch(err => console.error(err));
+								range: range,
+								valueInputOption: "RAW",
+								resource: { values: updatedRows }
+							}).then(() => {
+								console.log(`${paperId} count updated.`);
 							}).catch(err => console.error(err));
 						}).catch(err => console.error(err));
 					});
